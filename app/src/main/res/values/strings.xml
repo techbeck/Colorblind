@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Colorblind</string>
+    <string name="welcome_string">Welcome to Colorblind!\nImport a picture from your gallery to continue.</string>
+    <string name="button_import">Import picture</string>
+    <string name="button_accept">Accept selection</string>
+    <string name="desc">Image chosen</string>
+    <string name="label_comp">Complementary</string>
+    <string name="label_splitcomp">Split Complementary</string>
+    <string name="label_triad">Triad</string>
+    <string name="label_anal">Analogous</string>
+    <string name="label_square">Square</string>
+    <string name="label_tetra">Tetradic</string>
 </resources>
+
