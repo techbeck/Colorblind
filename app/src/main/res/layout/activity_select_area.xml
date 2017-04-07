@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context="com.becca.colorblind.SelectAreaActivity">
 
     <ImageView
@@ -17,7 +18,6 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
         android:adjustViewBounds="true"
-        android:background="#ff000000"
         android:cropToPadding="true"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toTopOf="@+id/accept_button"

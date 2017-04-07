@@ -37,6 +37,8 @@ public class SelectAreaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_area);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         imageView = (ImageView) findViewById(R.id.image_view);
         DisplayMetrics metrics = new DisplayMetrics();
@@ -81,5 +83,4 @@ public class SelectAreaActivity extends AppCompatActivity {
         };
         acceptAreaButton.setOnClickListener(clickListener);
     }
-
 }

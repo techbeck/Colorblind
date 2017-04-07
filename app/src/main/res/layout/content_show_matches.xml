@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -15,14 +15,13 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingTop="16dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context="com.becca.colorblind.ShowMatchesActivity"
         tools:showIn="@layout/activity_show_matches">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/label_comp"/>
+            android:text="@string/label_comp" />
 
         <LinearLayout
             android:id="@+id/comp_swatches"
@@ -33,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/label_splitcomp"/>
+            android:text="@string/label_splitcomp" />
 
         <LinearLayout
             android:id="@+id/splitcomp_swatches"
@@ -44,7 +43,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/label_triad"/>
+            android:text="@string/label_triad" />
 
         <LinearLayout
             android:id="@+id/triad_swatches"
@@ -55,7 +54,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/label_anal"/>
+            android:text="@string/label_anal" />
 
         <LinearLayout
             android:id="@+id/anal_swatches"
@@ -66,7 +65,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/label_square"/>
+            android:text="@string/label_square" />
 
         <LinearLayout
             android:id="@+id/square_swatches"

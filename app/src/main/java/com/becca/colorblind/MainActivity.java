@@ -28,7 +28,7 @@ public class  MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_IMAGE_IMPORT = 2;
 
-    public final static String EXTRA_MESSAGE = "net.tglo.colorblind.MESSAGE";
+    public final static String EXTRA_MESSAGE = "com.becca.colorblind.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +45,7 @@ public class  MainActivity extends AppCompatActivity {
             String[] filePathColumn = { MediaStore.Images.Media.DATA };
 
             Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);
-            try {
-                cursor.moveToFirst();
-            } catch(NullPointerException np) {
-                return;
-            }
+            cursor.moveToFirst();
 
             int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
             String picturePath = cursor.getString(columnIndex);

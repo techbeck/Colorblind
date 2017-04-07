@@ -53,6 +53,7 @@ public class DrawMatches extends View {
     public void onDraw(Canvas canvas) {
         getColors();
         drawColors(canvas);
+        setBackgroundColor(Color.WHITE);
     }
 
     private void drawColors(Canvas canvas)

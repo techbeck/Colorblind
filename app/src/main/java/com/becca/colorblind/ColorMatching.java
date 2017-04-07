@@ -3,12 +3,13 @@ package com.becca.colorblind;
 import android.support.v4.graphics.ColorUtils;
 
 public class ColorMatching {
-    private static float[] hsl = new float[3];
+    static float[] hsl = new float[3];
     public static int getComplement(int color)
     {
         ColorUtils.colorToHSL(color, hsl);
         float[] complementHSL = ColorRelationship.getComplement(hsl);
-        return ColorUtils.HSLToColor(complementHSL);
+        int complementInt = ColorUtils.HSLToColor(complementHSL);
+        return complementInt;
     }
     public static int[] getSplitComplementary(int color, float splitOffset)
     {
@@ -82,7 +83,7 @@ public class ColorMatching {
         int triadPick = getTriad(color)[0];
         int triComp = getComplement(triadPick);
         int comp = getComplement(color);
-        return new int[] { triadPick, triComp, comp};
+        int[] tetraInt = { triadPick, triComp, comp};
+        return tetraInt;
     }
 }
-
